@@ -16,7 +16,7 @@ class SvatkySluzbaTest {
 
         SvatkySluzba seznamSvatku = new SvatkySluzba();
         List<String> svatky = seznamSvatku.vyhledatSvatkyKeDni(MonthDay.of(5, 8));
-        assertEquals(0, svatky.size());
+        assertTrue(svatky.isEmpty());
 
         svatky = seznamSvatku.vyhledatSvatkyKeDni(MonthDay.of(1, 3));
         assertEquals(3, svatky.size());
